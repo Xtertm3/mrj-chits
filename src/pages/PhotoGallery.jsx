@@ -9,39 +9,39 @@ const PhotoGallery = () => {
   const galleryImages = [
     { 
       id: 1, 
-      src: '/images/gallery/gallery-1.jpg',  // Add your image here
+      src: '/images/gallery/gallery-1.jpg',
       alt: 'Gallery Image 1', 
-      placeholder: true 
+      placeholder: false 
     },
     { 
       id: 2, 
-      src: '/images/gallery/gallery-2.jpg',  // Add your image here
+      src: '/images/gallery/gallery-2.jpg',
       alt: 'Gallery Image 2', 
-      placeholder: true 
+      placeholder: false 
     },
     { 
       id: 3, 
-      src: '/images/gallery/gallery-3.jpg',  // Add your image here
+      src: '/images/gallery/gallery-3.jpg',
       alt: 'Gallery Image 3', 
-      placeholder: true 
+      placeholder: false 
     },
     { 
       id: 4, 
-      src: '/images/gallery/gallery-4.jpg',  // Add your image here
+      src: '/images/gallery/gallery-4.jpg',
       alt: 'Gallery Image 4', 
-      placeholder: true 
+      placeholder: false 
     },
     { 
       id: 5, 
-      src: '/images/gallery/gallery-5.jpg',  // Add your image here
+      src: '/images/gallery/gallery-5.jpg',
       alt: 'Gallery Image 5', 
-      placeholder: true 
+      placeholder: false 
     },
     { 
       id: 6, 
-      src: '/images/gallery/gallery-6.jpg',  // Add your image here
+      src: '/images/gallery/gallery-6.jpg',
       alt: 'Gallery Image 6', 
-      placeholder: true 
+      placeholder: false 
     }
   ];
 
