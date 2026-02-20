@@ -151,7 +151,7 @@ const ChitSchemes = () => {
                 
                 <div className="scheme-header">
                   <h3 className="scheme-category">
-                    {scheme.category === 'mid-term' ? 'Mid Term' : 'Long Term'}
+                    {scheme.category === 'short-term' ? 'Short Term' : scheme.category === 'mid-term' ? 'Mid Term' : 'Long Term'}
                   </h3>
                   <div className="scheme-duration">
                     <FaCalendarAlt />
