@@ -3,14 +3,46 @@ import { FaImage } from 'react-icons/fa';
 import './PhotoGallery.css';
 
 const PhotoGallery = () => {
-  // Placeholder images - Replace these with actual images
+  // Update these with your actual images
+  // Place images in: public/images/gallery/
+  // Uncomment the src and change placeholder to false when you add images
   const galleryImages = [
-    { id: 1, alt: 'Gallery Image 1', placeholder: true },
-    { id: 2, alt: 'Gallery Image 2', placeholder: true },
-    { id: 3, alt: 'Gallery Image 3', placeholder: true },
-    { id: 4, alt: 'Gallery Image 4', placeholder: true },
-    { id: 5, alt: 'Gallery Image 5', placeholder: true },
-    { id: 6, alt: 'Gallery Image 6', placeholder: true }
+    { 
+      id: 1, 
+      src: '/images/gallery/gallery-1.jpg',  // Add your image here
+      alt: 'Gallery Image 1', 
+      placeholder: true 
+    },
+    { 
+      id: 2, 
+      src: '/images/gallery/gallery-2.jpg',  // Add your image here
+      alt: 'Gallery Image 2', 
+      placeholder: true 
+    },
+    { 
+      id: 3, 
+      src: '/images/gallery/gallery-3.jpg',  // Add your image here
+      alt: 'Gallery Image 3', 
+      placeholder: true 
+    },
+    { 
+      id: 4, 
+      src: '/images/gallery/gallery-4.jpg',  // Add your image here
+      alt: 'Gallery Image 4', 
+      placeholder: true 
+    },
+    { 
+      id: 5, 
+      src: '/images/gallery/gallery-5.jpg',  // Add your image here
+      alt: 'Gallery Image 5', 
+      placeholder: true 
+    },
+    { 
+      id: 6, 
+      src: '/images/gallery/gallery-6.jpg',  // Add your image here
+      alt: 'Gallery Image 6', 
+      placeholder: true 
+    }
   ];
 
   return (

@@ -8,6 +8,38 @@ const ChitSchemes = () => {
   const schemes = [
     {
       id: 1,
+      category: 'long-term',
+      duration: '25 Months',
+      chitValue: '20,00,000',
+      monthlyContribution: '80,000',
+      popular: true
+    },
+    {
+      id: 2,
+      category: 'long-term',
+      duration: '25 Months',
+      chitValue: '10,00,000',
+      monthlyContribution: '40,000',
+      popular: true
+    },
+    {
+      id: 3,
+      category: 'long-term',
+      duration: '25 Months',
+      chitValue: '5,00,000',
+      monthlyContribution: '20,000',
+      popular: false
+    },
+    {
+      id: 4,
+      category: 'long-term',
+      duration: '25 Months',
+      chitValue: '2,00,000',
+      monthlyContribution: '8,000',
+      popular: false
+    },
+    {
+      id: 5,
       category: 'mid-term',
       duration: '30 Months',
       chitValue: '3,00,000',
@@ -15,31 +47,7 @@ const ChitSchemes = () => {
       popular: false
     },
     {
-      id: 2,
-      category: 'long-term',
-      duration: '40 Months',
-      chitValue: '20,00,000',
-      monthlyContribution: '50,000',
-      popular: true
-    },
-    {
-      id: 3,
-      category: 'long-term',
-      duration: '40 Months',
-      chitValue: '10,00,000',
-      monthlyContribution: '25,000',
-      popular: false
-    },
-    {
-      id: 4,
-      category: 'long-term',
-      duration: '40 Months',
-      chitValue: '5,00,000',
-      monthlyContribution: '12,500',
-      popular: false
-    },
-    {
-      id: 5,
+      id: 6,
       category: 'long-term',
       duration: '40 Months',
       chitValue: '50,00,000',
@@ -47,19 +55,11 @@ const ChitSchemes = () => {
       popular: true
     },
     {
-      id: 6,
-      category: 'long-term',
-      duration: '40 Months',
-      chitValue: '2,00,000',
-      monthlyContribution: '5,000',
-      popular: false
-    },
-    {
       id: 7,
       category: 'long-term',
       duration: '40 Months',
-      chitValue: '1,00,000',
-      monthlyContribution: '2,500',
+      chitValue: '20,00,000',
+      monthlyContribution: '50,000',
       popular: false
     }
   ];

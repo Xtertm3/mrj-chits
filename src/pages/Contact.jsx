@@ -181,7 +181,7 @@ const Contact = () => {
                     <FaMapMarkerAlt />
                   </div>
                   <h3>Visit Us</h3>
-                  <p>Cauvery Bhavan<br/>Bangalore, Karnataka</p>
+                  <p>#75 Banashankari Market Avenue Road Cross,<br/>Devara Dasimaiah Road, Bangalore - 560 002</p>
                 </div>
 
                 <div className="info-card">
@@ -189,7 +189,7 @@ const Contact = () => {
                     <FaPhone />
                   </div>
                   <h3>Call Us</h3>
-                  <p>+91 9986277180<br/>Mon - Sat: 9AM - 6PM</p>
+                  <p>080 22215473 | 080 22217639<br/>9986277180 | 9448168227</p>
                 </div>
 
                 <div className="info-card">
@@ -205,7 +205,7 @@ const Contact = () => {
                     <FaClock />
                   </div>
                   <h3>Business Hours</h3>
-                  <p>Monday - Saturday<br/>9:00 AM - 6:00 PM</p>
+                  <p>Monday - Saturday<br/>10:00 AM - 7:00 PM</p>
                 </div>
               </div>
             </div>

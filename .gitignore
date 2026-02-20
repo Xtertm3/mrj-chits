@@ -11,3 +11,5 @@
 # production
 /dist
 /.vite
+.vercel
+.env*.local

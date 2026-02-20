@@ -56,11 +56,11 @@ const Footer = () => {
             <ul className="footer-contact">
               <li>
                 <FaMapMarkerAlt />
-                <span>Cauvery Bhavan, Bangalore</span>
+                <span>#75 Banashankari Market Avenue Road Cross, Devara Dasimaiah Road, Bangalore - 560 002</span>
               </li>
               <li>
                 <FaPhone />
-                <span>+91 9986277180</span>
+                <span>080 22215473 | 080 22217639 | 9986277180 | 9448168227</span>
               </li>
               <li>
                 <FaEnvelope />
