@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import { FaCheckCircle, FaCalendarAlt, FaMoneyBillWave, FaChartLine } from 'react-icons/fa';
 import './ChitSchemes.css';
 
@@ -9,37 +10,45 @@ const ChitSchemes = () => {
     {
       id: 1,
       category: 'long-term',
+      duration: '40 Months',
+      chitValue: '50,00,000',
+      monthlyContribution: '1,25,000',
+      popular: true
+    },
+    {
+      id: 2,
+      category: 'short-term',
       duration: '25 Months',
       chitValue: '20,00,000',
       monthlyContribution: '80,000',
       popular: true
     },
     {
-      id: 2,
+      id: 3,
       category: 'long-term',
+      duration: '40 Months',
+      chitValue: '20,00,000',
+      monthlyContribution: '50,000',
+      popular: false
+    },
+    {
+      id: 4,
+      category: 'short-term',
       duration: '25 Months',
       chitValue: '10,00,000',
       monthlyContribution: '40,000',
       popular: true
     },
     {
-      id: 3,
-      category: 'long-term',
+      id: 5,
+      category: 'short-term',
       duration: '25 Months',
       chitValue: '5,00,000',
       monthlyContribution: '20,000',
       popular: false
     },
     {
-      id: 4,
-      category: 'long-term',
-      duration: '25 Months',
-      chitValue: '2,00,000',
-      monthlyContribution: '8,000',
-      popular: false
-    },
-    {
-      id: 5,
+      id: 6,
       category: 'mid-term',
       duration: '30 Months',
       chitValue: '3,00,000',
@@ -47,19 +56,19 @@ const ChitSchemes = () => {
       popular: false
     },
     {
-      id: 6,
-      category: 'long-term',
-      duration: '40 Months',
-      chitValue: '50,00,000',
-      monthlyContribution: '1,25,000',
-      popular: true
+      id: 7,
+      category: 'short-term',
+      duration: '25 Months',
+      chitValue: '2,00,000',
+      monthlyContribution: '8,000',
+      popular: false
     },
     {
-      id: 7,
+      id: 8,
       category: 'long-term',
       duration: '40 Months',
-      chitValue: '20,00,000',
-      monthlyContribution: '50,000',
+      chitValue: '2,00,000',
+      monthlyContribution: '5,000',
       popular: false
     }
   ];
@@ -115,6 +124,12 @@ const ChitSchemes = () => {
               All Schemes
             </button>
             <button 
+              className={`filter-btn ${activeTab === 'short-term' ? 'active' : ''}`}
+              onClick={() => setActiveTab('short-term')}
+            >
+              Short-Term (25 Months)
+            </button>
+            <button 
               className={`filter-btn ${activeTab === 'mid-term' ? 'active' : ''}`}
               onClick={() => setActiveTab('mid-term')}
             >
@@ -166,7 +181,7 @@ const ChitSchemes = () => {
                   </div>
                 </div>
 
-                <button className="btn btn-primary scheme-btn">Sign Up!</button>
+                <Link to="/contact" className="btn btn-primary scheme-btn">Sign Up!</Link>
               </div>
             ))}
           </div>

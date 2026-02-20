@@ -13,6 +13,11 @@
   border-radius: 20px;
   padding: 40px;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+}
+
+.payment-section:hover {
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08), 0 8px 20px rgba(255, 255, 255, 0.2);
 }
 
 .payment-icon-header {
@@ -78,7 +83,7 @@
 
 .detail-item:hover {
   transform: translateX(5px);
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1), 0 6px 15px rgba(255, 255, 255, 0.2);
 }
 
 .detail-item label {
@@ -250,7 +255,7 @@
 .tip-card:hover {
   border-color: var(--accent-color);
   transform: translateY(-5px);
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1), 0 8px 20px rgba(255, 255, 255, 0.2);
 }
 
 .tip-icon {

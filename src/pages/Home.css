@@ -155,7 +155,7 @@
 
 .feature-card:hover {
   transform: translateY(-15px);
-  box-shadow: var(--shadow-gold);
+  box-shadow: var(--shadow-gold), 0 10px 30px rgba(255, 255, 255, 0.2);
   border-color: var(--accent-color);
 }
 

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { FaUniversity, FaCopy, FaCheckCircle, FaMoneyCheck } from 'react-icons/fa';
 import './Payments.css';
 
@@ -181,7 +182,7 @@ const Payments = () => {
           <div className="payment-contact">
             <h3>Have Questions About Payments?</h3>
             <p>Our team is here to help you with any payment-related queries</p>
-            <a href="/contact" className="btn btn-primary">Contact Us</a>
+            <Link to="/contact" className="btn btn-primary">Contact Us</Link>
           </div>
         </div>
       </section>

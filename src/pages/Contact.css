@@ -15,6 +15,11 @@
   padding: 40px;
   border-radius: 20px;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.contact-form-wrapper:hover {
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1), 0 10px 30px rgba(255, 255, 255, 0.2);
 }
 
 .form-title {
@@ -155,7 +160,7 @@
 
 .info-card:hover {
   transform: translateX(10px);
-  box-shadow: 0 10px 30px rgba(212, 175, 55, 0.2);
+  box-shadow: 0 10px 30px rgba(212, 175, 55, 0.2), 0 8px 20px rgba(255, 255, 255, 0.3);
   border-left-color: #aa8c2c;
 }
 

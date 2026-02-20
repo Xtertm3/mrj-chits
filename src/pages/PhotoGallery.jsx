@@ -76,18 +76,6 @@ const PhotoGallery = () => {
               </div>
             ))}
           </div>
-
-          <div className="gallery-instructions">
-            <h3>📸 How to Add Your Photos:</h3>
-            <ol>
-              <li>Create a folder: <code>public/images/gallery/</code></li>
-              <li>Add your images with names: <code>gallery-1.jpg</code>, <code>gallery-2.jpg</code>, etc.</li>
-              <li>The images will automatically appear in the gallery</li>
-            </ol>
-            <p className="note">
-              <strong>Note:</strong> Recommended image size: 800x600px or similar aspect ratio for best results.
-            </p>
-          </div>
         </div>
       </section>
     </div>
@@ -95,30 +83,3 @@ const PhotoGallery = () => {
 };
 
 export default PhotoGallery;
-
-/* 
-===========================================
-IMAGE REPLACEMENT INSTRUCTIONS:
-===========================================
-
-METHOD 1 - Simple Image Replacement:
-1. Create folder: public/images/gallery/
-2. Add 6 images named: gallery-1.jpg, gallery-2.jpg, ..., gallery-6.jpg
-3. Images will automatically display
-
-METHOD 2 - Custom Image Names:
-1. Place your images in: public/images/gallery/
-2. Open this file: src/pages/PhotoGallery.js
-3. Update the galleryImages array:
-
-const galleryImages = [
-  { id: 1, src: '/images/gallery/your-image-1.jpg', alt: 'Description 1', placeholder: false },
-  { id: 2, src: '/images/gallery/your-image-2.jpg', alt: 'Description 2', placeholder: false },
-  // Add more images as needed
-];
-
-METHOD 3 - Add More Images:
-Simply add more objects to the galleryImages array with unique IDs.
-
-===========================================
-*/

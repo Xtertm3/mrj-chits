@@ -48,7 +48,7 @@
 
 .highlight-card {
   background: var(--light-bg);
-  padding: 30px 20px;
+  padding: 40px 30px;
   border-radius: 15px;
   text-align: center;
   border: 2px solid transparent;
@@ -58,7 +58,7 @@
 .highlight-card:hover {
   border-color: var(--accent-color);
   transform: translateY(-8px);
-  box-shadow: 0 15px 40px rgba(212, 175, 55, 0.2);
+  box-shadow: 0 15px 40px rgba(212, 175, 55, 0.2), 0 8px 20px rgba(255, 255, 255, 0.3);
 }
 
 .highlight-icon {
@@ -98,10 +98,16 @@
 
 .why-item {
   background: var(--white);
-  padding: 30px;
+  padding: 40px 35px;
   border-radius: 15px;
   border-left: 4px solid var(--accent-color);
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+}
+
+.why-item:hover {
+  box-shadow: 0 15px 40px rgba(255, 255, 255, 0.4), 0 8px 20px rgba(212, 175, 55, 0.15);
+  transform: translateY(-5px);
 }
 
 .why-item h3 {
@@ -143,7 +149,7 @@
 
 .step:hover {
   background: var(--white);
-  box-shadow: var(--shadow-lg);
+  box-shadow: var(--shadow-lg), 0 8px 25px rgba(255, 255, 255, 0.3);
   transform: translateY(-5px);
 }
 

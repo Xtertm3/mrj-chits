@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { FaQuoteLeft, FaUser, FaStar } from 'react-icons/fa';
 import './Testimonials.css';
 
@@ -83,23 +84,7 @@ const Testimonials = () => {
           <div className="testimonial-cta">
             <h2>Join Our Happy Customer Family</h2>
             <p>Experience the trust and excellence that over 6000 customers have enjoyed</p>
-            <a href="/contact" className="btn btn-primary">Get Started Today</a>
-          </div>
-
-          <div className="testimonial-instructions">
-            <h3>📸 How to Add Customer Photos:</h3>
-            <ol>
-              <li>Create a folder: <code>public/images/testimonials/</code></li>
-              <li>Add customer photos: <code>kiran.jpg</code>, <code>chetan.jpg</code>, <code>mohan.jpg</code></li>
-              <li>Open file: <code>src/pages/Testimonials.js</code></li>
-              <li>Update each testimonial object by adding:
-                <br/><code>image: '/images/testimonials/filename.jpg'</code>
-                <br/>and change <code>placeholder: false</code>
-              </li>
-            </ol>
-            <p className="note">
-              <strong>Recommended:</strong> Use professional headshot photos (400x400px) for best results.
-            </p>
+            <Link to="/contact" className="btn btn-primary">Get Started Today</Link>
           </div>
         </div>
       </section>
@@ -108,40 +93,3 @@ const Testimonials = () => {
 };
 
 export default Testimonials;
-
-/* 
-===========================================
-TESTIMONIAL PHOTO INSTRUCTIONS:
-===========================================
-
-STEP-BY-STEP GUIDE:
-
-1. Prepare Photos:
-   - Create folder: public/images/testimonials/
-   - Add customer photos (with permission)
-   - Recommended: 400x400px, square format
-
-2. Update Code:
-   In the testimonials array, change from:
-   
-   {
-     id: 1,
-     name: 'Kiran Kumar J',
-     ...
-     placeholder: true
-   }
-   
-   To:
-   
-   {
-     id: 1,
-     name: 'Kiran Kumar J',
-     ...
-     image: '/images/testimonials/kiran.jpg',
-     placeholder: false
-   }
-
-3. Repeat for all testimonials.
-
-===========================================
-*/
