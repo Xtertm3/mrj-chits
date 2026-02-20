@@ -1,0 +1,135 @@
+.gallery-page {
+  margin-top: 70px;
+}
+
+.gallery-intro {
+  text-align: center;
+  font-size: 1.1rem;
+  color: var(--text-light);
+  max-width: 700px;
+  margin: 0 auto 3rem;
+  line-height: 1.8;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  margin-bottom: 50px;
+}
+
+.gallery-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 15px;
+  aspect-ratio: 4/3;
+  background: var(--light-bg);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.gallery-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.1);
+}
+
+.image-placeholder {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, var(--light-bg), #e8e8e8);
+  color: var(--text-light);
+}
+
+.image-placeholder svg {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+  color: var(--text-light);
+}
+
+.image-placeholder p {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.gallery-instructions {
+  background: linear-gradient(135deg, #fff9e6, #f0f0f0);
+  border: 2px dashed var(--accent-color);
+  border-radius: 15px;
+  padding: 30px;
+  margin-top: 50px;
+}
+
+.gallery-instructions h3 {
+  color: var(--dark-color);
+  margin-bottom: 1.5rem;
+  font-size: 1.3rem;
+}
+
+.gallery-instructions ol {
+  margin-left: 20px;
+  margin-bottom: 1.5rem;
+}
+
+.gallery-instructions li {
+  margin-bottom: 10px;
+  line-height: 1.6;
+  color: var(--text-dark);
+}
+
+.gallery-instructions code {
+  background: rgba(26, 77, 46, 0.1);
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-family: 'Courier New', monospace;
+  color: var(--primary-color);
+  font-weight: 600;
+}
+
+.note {
+  background: var(--white);
+  padding: 15px;
+  border-radius: 8px;
+  border-left: 4px solid var(--accent-color);
+  margin-top: 1rem;
+}
+
+.note strong {
+  color: var(--primary-color);
+}
+
+@media (max-width: 1024px) {
+  .gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+}
+
+@media (max-width: 640px) {
+  .gallery-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .gallery-instructions {
+    padding: 20px;
+  }
+
+  .gallery-instructions h3 {
+    font-size: 1.1rem;
+  }
+}
