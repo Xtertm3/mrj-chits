@@ -1,7 +1,7 @@
 {
   "buildCommand": "npm run build",
-  "outputDirectory": "build",
+  "outputDirectory": "dist",
   "env": {
-    "REACT_APP_API_URL": "@react_app_api_url"
+    "VITE_APP_API_URL": "@vite_app_api_url"
   }
 }
