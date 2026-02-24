@@ -27,42 +27,16 @@
   z-index: 1001;
 }
 
-.logo-placeholder {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+.logo-img {
+  height: 60px;
+  width: auto;
+  display: block;
+  transition: transform 0.3s ease;
 }
 
-.logo-text {
-  font-family: 'Playfair Display', serif;
-  font-size: 1.8rem;
-  font-weight: 800;
-  background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  line-height: 1;
+.logo-img:hover {
+  transform: scale(1.05);
 }
-
-.logo-tagline {
-  font-size: 0.75rem;
-  color: var(--secondary-color);
-  font-weight: 600;
-  letter-spacing: 2px;
-  margin-top: 2px;
-}
-
-/* LOGO IMAGE INSTRUCTIONS:
-   To add your logo image:
-   1. Place your logo image in: public/images/logo.png
-   2. Replace the .logo-placeholder div with:
-      <img src="/images/logo.png" alt="MRJ Chits Logo" className="logo-img" />
-   3. Add this CSS:
-      .logo-img {
-        height: 60px;
-        width: auto;
-      }
-*/
 
 .nav-menu {
   display: flex;

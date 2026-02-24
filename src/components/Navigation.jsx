@@ -38,11 +38,7 @@ const Navigation = () => {
       <div className="container">
         <div className="nav-wrapper">
           <Link to="/" className="logo">
-            {/* Replace with your actual logo */}
-            <div className="logo-placeholder">
-              <span className="logo-text">MRJ Chits</span>
-              <span className="logo-tagline">Pvt Ltd</span>
-            </div>
+            <img src="/images/logo.png" alt="MRJ Chits Logo" className="logo-img" />
           </Link>
 
           <ul className={`nav-menu ${isOpen ? 'active' : ''}`}>
